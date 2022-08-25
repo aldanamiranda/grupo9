@@ -10,3 +10,8 @@ Integrantes:
 - Aldana Miranda, 30 años. Sin conocimientos previos de programación. Estudia para ampliar sus posibilidades laborales y poder trabajar desde cualquier parte del mundo.
 -
 -
+
+Sitios web de referencia:
+- https://www.mamuschka.com
+- https://rapanui.com.ar/
+
