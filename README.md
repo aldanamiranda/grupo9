@@ -8,7 +8,7 @@ Dirigido a público general de Argentina, con varios locales distribuidos en dis
 Integrantes:
 -  Federico Vigo,  29  años. Arrancó el curso con la idea de intruducirse en el mundo laboral de la programacion web.
 - Aldana Miranda, 30 años. Sin conocimientos previos de programación. Estudia para ampliar sus posibilidades laborales y poder trabajar desde cualquier parte del mundo.
--
+-  Igancio Chulia, 27 años. 
 -
 
 Sitios web de referencia:
