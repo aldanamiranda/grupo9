@@ -9,7 +9,7 @@ Integrantes:
 -  Federico Vigo,  29  años. Arrancó el curso con la idea de intruducirse en el mundo laboral de la programacion web.
 - Aldana Miranda, 30 años. Sin conocimientos previos de programación. Estudia para ampliar sus posibilidades laborales y poder trabajar desde cualquier parte del mundo.
 -  Igancio Chulia, 27 años. 
--
+- Bautista Coppolillo, 23 años. No sabia nada de programacion y vi que un amigo estaba metido asi que quise arrancar.
 
 Sitios web de referencia:
 - https://www.mamuschka.com
