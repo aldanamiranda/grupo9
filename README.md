@@ -15,4 +15,6 @@ Integrantes:
 Sitios web de referencia:
 - https://www.mamuschka.com
 - https://rapanui.com.ar/
+- https://elreinodeloschocolates.com/
+- https://www.mamusia.com.ar/
 
