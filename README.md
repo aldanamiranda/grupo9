@@ -17,4 +17,5 @@ Sitios web de referencia:
 - https://rapanui.com.ar/
 - https://elreinodeloschocolates.com/
 - https://www.mamusia.com.ar/
+- https://lapinochachocolates.shopy.com.ar/
 
