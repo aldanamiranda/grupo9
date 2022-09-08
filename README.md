@@ -10,6 +10,7 @@ Integrantes:
 - Aldana Miranda, 30 años. Sin conocimientos previos de programación. Estudia para ampliar sus posibilidades laborales y poder trabajar desde cualquier parte del mundo.
 - Igancio Chulia, 27 años. Creo que la programación me abre camino a otro perfil profesional y de progreso.    
 - Bautista Coppolillo, 23 años, no tengo conocimientos sobre programacion pero un amigo hacia el curso y me intereso  aprender mas.
+- Lucas Benitez Cruz, 19 años. No tengo conocimientos previos, pero me interesa y nunca le habia dedicado el tiempo y es una habilidad útil que me va servir.
 
 
 Sitios web de referencia:
