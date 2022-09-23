@@ -11,45 +11,59 @@ body {
     box-sizing: border-box;
     width: 100%;
 }
+
 header {
     width: 100%;
     background-color: #f09e5c;
     text-align: center;
-
+    position: fixed;
     top: 0;
     z-index: 100;
+    margin: 0 auto;
 
 }
 
-.main-navbar{
-    border: #683914 solid 5px;
+.main-header-top-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buscadorYcuenta{
+    text-align: left;
+}
+.buscadorYcuenta i{
     
 }
+
+.main-navbar {
+    text-align: left;
+    width: 100%;
+}
+
 .navbar {
     display: flex;
-    justify-content: space-between;
+    border: #683914 solid 2px;
 
 }
 
-.miCuentayCarrito 
-{
-    color: #fff9d5;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 17px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;}
+.navbar a {}
 
-    .mi{
-        color: #fff9d5;
-        font-size: 17px;
-        text-decoration: none;
-        display: inline-block;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
+.top-navbar {
+    border: #68143d solid 5px;
+    display: flex;
+}
+
+.miCuentayCarrito {
+    display: flex;
+}
+
+.top-navbar a {
+    color: #fff9d5;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
 
 .navbar a {
     color: #fff9d5;
@@ -58,21 +72,19 @@ header {
     font-size: 17px;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px 0;
 }
 
-.navbar li{
-    color: #fff9d5;
-    font-size: 17px;
-    text-decoration: none;
-    display: inline-block;
+.navbar li,
+.top-navbar li {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    align-items: flex-end;
+    width: 100%;
 }
+
 
 .logo {
-    width: 200px;
+    width: 30%;
     margin: 15px
 }
 
