@@ -13,7 +13,7 @@ body {
 }
 header {
     width: 100%;
-    background-color: #f5a83c;
+    background-color: #f09e5c;
     text-align: center;
 
     top: 0;
@@ -31,6 +31,26 @@ header {
 
 }
 
+.miCuentayCarrito 
+{
+    color: #fff9d5;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;}
+
+    .mi{
+        color: #fff9d5;
+        font-size: 17px;
+        text-decoration: none;
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
 .navbar a {
     color: #fff9d5;
     text-decoration: none;
@@ -41,8 +61,9 @@ header {
     padding: 0;
 }
 
-.navbar li, .mi{
+.navbar li{
     color: #fff9d5;
+    font-size: 17px;
     text-decoration: none;
     display: inline-block;
     list-style-type: none;
