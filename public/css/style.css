@@ -4,22 +4,24 @@
 body {
     font-family: 'Dancing Script', cursive;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     background-color: #683914;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    width: 100%;
+
+  
 }
 
 header {
-    width: 100%;
+    width: 97%;
     background-color: #f09e5c;
     text-align: center;
     position: fixed;
     top: 0;
     z-index: 100;
-    margin: 0 auto;
+    margin:0px ;
+    position: relative;
 
 }
 
@@ -27,35 +29,66 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+
 }
 .buscadorYcuenta{
     text-align: left;
+    width: 50%;
 }
+
 .buscadorYcuenta i{
     
 }
 
 .main-navbar {
-    text-align: left;
+    text-align: center;
     width: 100%;
+
+    
 }
 
 .navbar {
     display: flex;
     border: #683914 solid 2px;
+    margin: 0;
+    padding: 5px 15px;
+    align-items: center; 
+    width: 100%;
 
 }
 
-.navbar a {}
+.inicio{
+    display: none;
+}
+
+
 
 .top-navbar {
     border: #68143d solid 5px;
     display: flex;
+    justify-content:space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .miCuentayCarrito {
     display: flex;
 }
+.miCarrito, .miCuenta{
+    justify-content:space-around;
+    margin: auto;
+    padding: 0px 5px;
+}
+
+.miCuenta i{
+    display: block;
+}
+.miCarrito i{
+    display: block;
+}
+
 
 .top-navbar a {
     color: #fff9d5;
@@ -68,18 +101,19 @@ header {
 .navbar a {
     color: #fff9d5;
     text-decoration: none;
-    display: inline-block;
     font-size: 17px;
     list-style-type: none;
-    margin: 0;
-    padding: 5px 0;
+    display: flex;
+    align-items: center;
 }
 
 .navbar li,
 .top-navbar li {
     list-style-type: none;
-    align-items: flex-end;
+    justify-content:space-around;
+    align-items: center;
     width: 100%;
+
 }
 
 
@@ -88,13 +122,52 @@ header {
     margin: 15px
 }
 
-main {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #ebebeb;
-    text-align: center;
-}
 
 .banner {
     width: 100%;
 }
+
+@media(min-width:361px) {
+
+    .logo{
+        max-width: 200px;
+    }
+    .banner {
+        margin-top: 30px;
+    }
+}
+
+@media(min-width:769px) {
+
+    .banner {
+        margin-top: 30px;
+    }
+    .logo{
+        max-width: 200px;
+    }
+
+    .inicio {
+        display:flex;
+      }
+
+      .miCarrito, .miCuenta{
+        padding: 0px 40px;
+    }
+}
+
+@media(min-width: 1200px) {
+
+
+
+    .main-navbar li {
+        margin: 0 12px;
+
+    }
+
+    .navbar a {
+        font-size: 19px;
+    }
+
+    .navbar {
+        margin-top: 30px;
+    }}
