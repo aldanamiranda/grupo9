@@ -4,20 +4,20 @@ const path= require('path');
 
 const mainController = {
     home: (req, res) => {
-            res.sendFile(path.resolve(__dirname, 'views/home.html'))
+            res.sendFile(path.resolve(__dirname, '.src/views/home.html'))
     },
    register: (req,res)=>{
-        res.sendFile(path.resolve(__dirname, 'views/register.html'))
+        res.sendFile(path.resolve(__dirname, '..views/register.html'))
     },
     
     login: (req,res)=>{
-        res.sendFile(path.resolve(__dirname, 'views/login.html'))
+        res.sendFile(path.resolve(__dirname, '..views/login.html'))
     },
     productDetail: (req,res)=>{
-        res.sendFile(path.resolve(__dirname, 'views/productDetail.html'))
+        res.sendFile(path.resolve(__dirname, '..views/productDetail.html'))
     },
     productCart: (req,res)=>{
-        res.sendFile(path.resolve(__dirname, 'views/productCart.html'))
+        res.sendFile(path.resolve(__dirname, '..views/productCart.html'))
     }
 }
 
