@@ -6,11 +6,12 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     background-color: #683914;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 10px;
     box-sizing: border-box;
-    width: 95%;  
+    width: 100%;  
     position: relative;
+    text-align: center;
 }
 
 header {
@@ -36,10 +37,6 @@ header {
 .buscadorYcuenta{
     text-align: left;
     width: 100%;
-}
-
-.buscadorYcuenta i{
-    
 }
 
 .main-navbar {
@@ -150,7 +147,7 @@ main {
 
 .articulo {
     margin: 10px;
-    background-color: #ebebeb;
+    background-color: rgb(255, 255, 255);
 
 }
 .articulo img{
@@ -163,7 +160,7 @@ main {
     border-top: 1px solid #ff5353;
     position: relative;
     padding: 15px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 
 }
 
@@ -173,10 +170,10 @@ main {
 .titular {
     font-size: 24px;
     text-align: left;
-    color: #683914;
-    background-color: #ebebeb;
+    color: #dda981;
+    background-color: rgb(78, 40, 10);
     font-weight: bold;
-    padding: 5px;
+    padding: 30px;
     display: block;
     width: 100%;
 }
@@ -219,30 +216,13 @@ main {
 
 
     .articulo {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 40%;
-        margin: 5px
-
-
     }
 
     .productos {
         display: flex;
         flex-wrap: wrap;
 
-    }
-
-    .producto i {
-        font-size: 10px;
-        padding: 3px;
-        width: 20px;
-        height: 20px;
-
-    }
-    
-    .section-artic {
-        display: flex;
-        flex-wrap: wrap
     }
 }
 
@@ -308,7 +288,7 @@ main {
     }  
     .articulo {
         width: 22%;
-        height: 22%;
+       
     }
 
 }
