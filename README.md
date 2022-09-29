@@ -20,3 +20,5 @@ Sitios web de referencia:
 - https://www.mamusia.com.ar/
 - https://lapinochachocolates.shopy.com.ar/
 
+
+LINK DE PLATAFORMA DE TRABAJO (TRELLO): https://trello.com/b/w9EIlyzy/chocolateria
