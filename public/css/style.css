@@ -26,6 +26,9 @@ header {
     width: 100%;
 
 }
+.submit{
+    display: inline;
+}
 
 .main-header-top-bar {
     display: flex;
@@ -72,18 +75,18 @@ header {
 
 .miCuentayCarrito {
     display: flex;
+    text-align: right;
 }
 .miCarrito, .miCuenta{
     justify-content:space-around;
     margin: auto;
-    padding: 0px 5px;
 }
 
 .miCuenta i{
-    display: block;
+    display: inline;
 }
 .miCarrito i{
-    display: block;
+    display: inline;
 }
 
 
