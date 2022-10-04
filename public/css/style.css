@@ -228,10 +228,10 @@ position: relative;
     }
 
 footer {
-    display: flex;
+    
     text-align: center;
     justify-content:space-around;
-    
+    font-size: 12px;
 
 }
 
@@ -257,6 +257,11 @@ footer {
         display: flex;
         flex-wrap: wrap;
 
+    }
+
+    footer {
+        font-size: 14px;
+       
     }
 }
 
@@ -300,6 +305,9 @@ footer {
 
     .navbar li {
         margin: 0 8px;
+    }
+    footer {
+        display: flex;
     }
 
 }
