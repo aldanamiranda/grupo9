@@ -70,8 +70,13 @@ header {
 .navbar li:hover{
 background-color: #ffeda7;
 }
+.navbar li:link{
+    transition: 1s;
+}
 
-
+.navbar li:link:hover{
+    color: #683914;
+}
 
 
 .inicio{
