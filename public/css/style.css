@@ -55,31 +55,36 @@ header {
     margin: 0;
     padding: 5px 15px;
     align-items: center; 
-    width: 100;
+    width: 100%;
     text-align: center;
+    justify-content: center;
 
 }
 .navbar li{
-    text-align: center;
     font-size: 12px;
-    transition-property: background-color, color;
-    transition-duration: 1s;
+    transition:all 1s;
+   display: flex;
+   text-align: center;
+   font-weight: 500;
+   padding: 10px;
+ 
 
 }
 
 .navbar li:hover{
 background-color: #ffeda7;
 }
-.navbar li:link{
-    transition: 1s;
+.navbar li a{
+     transition: all 1s;
+     text-align: center;
+     font-weight: 1000;
 }
-
-.navbar li:link:hover{
+.navbar li:hover a{
     color: #683914;
 }
 
 
-.inicio{
+.inicio {
     display: none;
 }
 
