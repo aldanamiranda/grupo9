@@ -58,7 +58,13 @@ header {
     width: 100%;
 
 }
+.navbar li{
+    transition: 1s;
+}
 
+.navbar li:hover{
+    background-color: #ff5353;
+}
 .inicio{
     display: none;
 }
