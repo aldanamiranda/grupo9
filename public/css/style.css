@@ -45,7 +45,8 @@ header {
 .main-navbar {
     text-align: center;
     width: 100%;
-
+    border-radius: solid red
+    2px;
     
 }
 
@@ -55,7 +56,8 @@ header {
     margin: 0;
     padding: 5px 15px;
     align-items: center; 
-    width: 100%;
+    width: 90%;
+    text-align: center;
 
 }
 .navbar li{
