@@ -45,8 +45,7 @@ header {
 .main-navbar {
     text-align: center;
     width: 100%;
-    border-radius: solid red
-    2px;
+
     
 }
 
@@ -56,7 +55,7 @@ header {
     margin: 0;
     padding: 5px 15px;
     align-items: center; 
-    width: 90%;
+    width: 100;
     text-align: center;
 
 }
@@ -69,9 +68,10 @@ header {
 }
 
 .navbar li:hover{
-    color: #683914;
 background-color: #ffeda7;
 }
+
+
 
 
 .inicio{
