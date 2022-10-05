@@ -59,11 +59,17 @@ header {
 
 }
 .navbar li{
-    transition: 1s;
+    text-align: center;
+    font-size: 12px;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+
 }
 
 .navbar li:hover{
-color: #683914;}
+    color: #683914;
+background-color: #ffeda7;
+}
 
 
 .inicio{
