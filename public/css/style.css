@@ -19,9 +19,8 @@ header {
     background-color: #f09e5c;
     text-align: center;
     position: fixed;
-    top: 0;
     z-index: 100;
-    margin:0px ;
+    margin: 0px;
     position: static;
     width: 100%;
 
@@ -32,14 +31,15 @@ header {
 
 .main-header-top-bar {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    align-items: right;
+    width: 150%;
+    height: 50px;
 
 }
 .buscadorYcuenta{
-    text-align: left;
-    width: 100%;
+    text-align: justify;
+    width: 80%;
+    padding-bottom: 30px;
 }
 
 .main-navbar {
@@ -100,27 +100,20 @@ background-color: #ffeda7;
 
 .miCuentayCarrito {
     display: flex;
-    text-align: right;
+    text-align: justify;
 }
-.miCarrito, .miCuenta{
-    justify-content:space-around;
-    margin: auto;
+.miCarrito, .miCuenta, .crearCuenta{
+    margin: 3%;
+    font-size: 5px;
+    line-height: 15px;
 }
-
-.miCuenta i{
-    display: inline;
-}
-.miCarrito i{
-    display: inline;
-}
-
 
 .top-navbar a {
     color: #fff9d5;
     font-size: 17px;
     text-decoration: none;
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 .navbar a {
@@ -143,9 +136,10 @@ background-color: #ffeda7;
 
 
 .logo {
-    width: 30%;
-    margin: 15px;
-    padding: 15px;
+    margin: 0px;
+    padding: 0px;
+    width: 5%;
+    height: 70px;
 }
 
 
