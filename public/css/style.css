@@ -235,6 +235,33 @@ footer {
 
 }
 
+/* Seccion login */
+
+.login__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.input{
+    width: 200px;
+    border-radius: 50px;
+    padding: 10px;
+}
+.label{
+    font-size: 25px;
+}
+.login__title{
+    font-size: 3em;
+}
+.login__button{
+    border-radius: 40px;
+    background-color: #683914;
+    color:#fff;
+    padding: 20px;
+    
+}
 @media(min-width:361px) {
 
     .logo{
