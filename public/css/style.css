@@ -63,8 +63,9 @@ header {
 }
 
 .navbar li:hover{
-    background-color: #ff5353;
-}
+color: #683914;}
+
+
 .inicio{
     display: none;
 }
