@@ -159,17 +159,20 @@ main {
 
 .section-artic {
     width: 100%;
+    
 }
 
 .productos {
     width: 100%;
     justify-content: space-around;
     align-items: center;
+   
 }
 
 .articulo {
     margin: 10px;
     background-color: rgb(255, 255, 255);
+    border-radius: 10px;
 
 }
 .articulo img{
@@ -179,10 +182,11 @@ main {
 
 .producto {
     text-align: left;
-    border-top: 1px solid #ff5353;
+    border-top: 1px solid #683914;
     position: relative;
     padding: 15px;
     background-color: white;
+    border-radius: 10px;
 
 }
 
@@ -223,6 +227,7 @@ main {
 .verTodosLosProductos
 {
 padding: 10px;
+margin-top: 25px;
 
 
 }
@@ -233,6 +238,9 @@ padding: 10px;
     background-color: #683914;
     color:#ffeda7;
     padding: 10px;
+    border-radius: 8px;
+    border-color: #f09e5c;
+    border: solid 5px;
     transition: all 1s;
     font-weight: 700
     }
@@ -240,10 +248,14 @@ padding: 10px;
         background-color:#ffeda7;
         color: #683914;
     }
+    
+    /* Seccion footer */
 
 .redes, .contactos, .mediosDePago, .sucursales  {list-style-type: none;
 margin: 0;
-padding: 0;}
+padding: 0;
+line-height: 35px;
+}
 
 .red {
     width: 30px;
@@ -252,16 +264,32 @@ padding: 0;}
 
 .contactos-footer{
 position: relative;
+align-items: center
 
 }
-.redes, .contactos{
-   
+
+.redes{
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    display: flex;
+}
+.contactos{
+    text-align: center;
+    justify-content: center;
+    position: relative;
 }
 
+.contacto{
+    display: block;
+    align-items: center;
+    justify-content: center;    
+}
+
+.red{
+    text-align: center;
+    align-items: center;
+}
 .subtitulo-footer{
     font-size: 20px;
     }
@@ -271,6 +299,7 @@ footer {
     text-align: center;
     justify-content:space-around;
     font-size: 12px;
+
 
 }
 
@@ -317,7 +346,13 @@ footer {
 
     .articulo {
         width: 40%;
+        transition: all 0.25s;
     }
+
+   .articulo:hover{
+        box-shadow: 0px 0px 20px rgba(255, 217, 129, 0.816);
+    }
+
 
     .productos {
         display: flex;
@@ -329,6 +364,7 @@ footer {
         font-size: 14px;
        
     }
+    
 }
 
 @media(min-width:769px) {
