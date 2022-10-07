@@ -18,6 +18,9 @@ const mainController = {
     },
     productCart: (req,res)=>{
         res.sendFile(path.resolve(__dirname, '../views/productCart.html'))
+    },
+    products: (req,res)=>{
+        res.sendFile(path.resolve(__dirname, '../views/products.html'))
     }
 }
 
