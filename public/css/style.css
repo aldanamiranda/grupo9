@@ -220,6 +220,26 @@ main {
     display: none;
     color: #666;
 }
+.verTodosLosProductos
+{
+padding: 10px;
+
+
+}
+
+.button-verTodosLosProductos{
+    
+    font-size: 20px;
+    background-color: #683914;
+    color:#ffeda7;
+    padding: 10px;
+    transition: all 1s;
+    font-weight: 700
+    }
+    .button-verTodosLosProductos:hover{
+        background-color:#ffeda7;
+        color: #683914;
+    }
 
 .redes, .contactos, .mediosDePago, .sucursales  {list-style-type: none;
 margin: 0;
