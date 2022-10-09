@@ -2,28 +2,41 @@
 const express = require("express");
 const path= require('path');
 
+const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 const mainController = {
 
     home: function (req, res) {
-            res.render('home')
+        const destacado = products.filter(producti=> producto.category == "destacado");
+        const noDestacado = products.filter(producto=>producto.category == "in-sale");
+            res.render('home', {destacado, noDestacado})
     },
-   register: (req,res)=>{
-        res.sendFile(path.resolve(__dirname, '../views/register.html'))
-    },
+
+    search: (req, res) => {
+		const busqueda = req.query.keywords
+		const productoABuscar= products.filter(producto=> producto.name.toLoweeCase().includes(busqueda))
+		res.render("results", {productoABuscar, busqueda})
+	},
+};
+   //register: (req,res)=>{
+     //   res.sendFile(path.resolve(__dirname, '../views/register.html'))
+    //},
     
-    login: (req,res)=>{
-        res.sendFile(path.resolve(__dirname, '../views/login.html'))
-    },
-    productDetail: (req,res)=>{
-        res.sendFile(path.resolve(__dirname, '../views/productDetail.html'))
-    },
-    productCart: (req,res)=>{
-        res.sendFile(path.resolve(__dirname, '../views/productCart.html'))
-    },
-    products: (req,res)=>{
-        res.sendFile(path.resolve(__dirname, '../views/products.html'))
-    }
-}
+//    login: (req,res)=>{
+  //      res.sendFile(path.resolve(__dirname, '../views/login.html'))
+//    },
+  //  productDetail: (req,res)=>{
+    //    res.sendFile(path.resolve(__dirname, '../views/productDetail.html'))
+//    },
+  //  productCart: (req,res)=>{
+  //      res.sendFile(path.resolve(__dirname, '../views/productCart.html'))
+ //   },
+//    products: (req,res)=>{
+  //      res.sendFile(path.resolve(__dirname, '../views/products.html'))
+  //  }
+//} 
+
 
 
 module.exports= mainController;
