@@ -1,6 +1,7 @@
 const express = require("express");
 const path= require('path');
-const mainRouter = require ('./routers/main.js')
+const mainRouter = require ('./routers/main.js');
+const productRouter = require ('./routers/products.js');
 
 const app = express();
 

@@ -1,127 +1,75 @@
 <!DOCTYPE html>
 <html>
 
-    <%- include('partials/head', {title: 'Home'}) %>
+<%- include('partials/head', {title: 'Home' }) %>
 
-<body>
+    <body>
 
-    <%- include('partials/header') %>
+        <%- include('partials/header') %>
 
-    <section>
-        <img class=banner src="/images/banner.png" alt="banner">
-    </section>
+            <section>
+                <img class=banner src="/images/banner.png" alt="banner">
+            </section>
 
 
-    <main>
-        <section class="section-artic">
-            <p class="titular">Promociones</p4>
-            <div class="productos">
-                <article class="articulo">
-                    <img class="img-articulo" src="/images/caja chocolates.jpg" alt="imagen de promo1">
-                    <div class="producto">
-                        <p class="precio">$5.200</p>
-                        <p class="descuento"> 2x1 Producto del día</p>
-                        <p class="descripcion">Box - 70 Mini Chocolates</p>
+            <main>
+                <section class="section-artic">
+                    <p class="titular">Promociones</p4>
+                    <div class="productos">
+                        <% promo.forEach(producto=> { %>
+
+
+                            <article class="articulo">
+                                <img class="img-articulo" src="/images/<%=producto.image%> " alt="imagen de promo1">
+                                <div class="producto">
+                                    <p class="precio">
+                                        <%= producto.precio %> >
+                                    </p>
+                                    <p class="descuento">
+                                        <%= producto.descuento %> >
+                                    </p>
+                                    <p class="descripcion">
+                                        <%= producto.descripcion %>
+                                    </p>
+                                </div>
+                            </article>
+
+                            <% }) %>
                     </div>
-                </article>
+                </section>
 
-                <article class="articulo">
-                    <img class="img-articulo" src="/images/frutillas.jpg" alt="imagen de promo2">
-                    <div class="producto">
-                        <p class="precio">$6.000</p>
-                        <p class="descuento">20% off</p>
-                        <p class="descripcion">Box - 15 Frutilates.</p>
+                <section class="section-artic">
+                    <p class="titular">Productos destacados</p>
+                    <div class="productos">
+                        <% destacado.forEach(producto=> { %>
+
+
+                            <article class="articulo">
+                                <img class="img-articulo" src="/images/<%=producto.image%> " alt="imagen de promo1">
+                                <div class="producto">
+                                    <p class="precio">
+                                        <%= producto.precio %> >
+                                    </p>
+                                    <p class="descuento">
+                                        <%= producto.descuento %> >
+                                    </p>
+                                    <p class="descripcion">
+                                        <%= producto.descripcion %>
+                                    </p>
+                                </div>
+                            </article>
+
+                            <% }) %>
                     </div>
-                </article>
+                </section>
 
-                <article class="articulo">
-                    <img class="img-articulo" src="/images/bomboness.jpg" alt="imagen de promo3">
-                    <div class="producto">
-                        <p class="precio">$7.300</p>
-                        <p class="descuento">10% off</p>
-                        <p class="descripcion">Box - Bombones x3 doc.</p>
-                    </div>
-                </article>
+                <div class="verTodosLosProductos">
+                    <button class="button-verTodosLosProductos">Ver todos los produtos</button>
+                </div>
+            </main>
 
-                <article class="articulo">
-                    <img class="img-articulo" src="/images/alfajores.jpg" alt="imagen de promo4">
-                    <div class="producto">
-                        <p class="precio">$4.100</p>
-                        <p class="descuento">5% off</p>
-                        <p class="descripcion">Alfajores x12"</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="section-artic">
-            <p class="titular">Productos destacados</p>
-            <div class="productos">
-                <article class="articulo">
-                    <img class="img-articulo" src="/images/chocoOreo.jpg" alt="imagen producto1">
-                    <div class="producto">
-                        <p class="precio">$6.700</p>
-                        <p class="descripcion">ChocoOreo</p>
-                    </div>
-                </article>
-
-                <article class="articulo">
-                    <img class="img-articulo" src="/images/rama.jpg" alt="imagen de producto2">
-                    <div class="producto">
-                        <p class="precio">$1.500</p>
-                        <p class="descripcion">Chocolate en rama 500gr</p>
-                    </div>
-                </article>
-
-                <article class="articulo">
-                    <img class="img-articulo" src="/images/tableta.jpg" alt="imagen de producto3">
-                    <div class="producto">
-                        <p class="precio">$1200</p>
-                        <p class="descripcion">Tableta 500gr.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <div class="verTodosLosProductos">
-        <button class="button-verTodosLosProductos">Ver todos los produtos</button>
-        </div>
-    </main>
-
-    <footer>
-        <section class="contactos-footer">
-            <p class="subtitulo-footer">Contacto</p>
-            <ul class="redes">
-                <li><a href="#"> <img class="red" src="/images/wsp.png" alt="whatsapp"></a></li>
-                <li><a href="#"> <img class="red" src="/images/inst.jpg" alt="instagram"></a></li>
-                <li><a href="#"> <img class="red" src="/images/face.jpg" alt="facebook"></a></li>
-            </ul>
-            <ul class="contactos">
-                <li class="contacto"> <img class="red" src="/images/mail.png" alt="mail">chocodreams@gmail.com</li>
-                <li class="contacto"> <img class="red" src="/images/tel.png" alt="telefono">11-2832-4923</li>
-            </ul>
-        </section>
-
-        <section class="mediosDePago-footer">
-            <p class="subtitulo-footer">Medios de pago</p>
-            <ul class="mediosDePago">
-            <li>MercadoPago</li>
-            <li>Tarjeta de débito</li>
-            <li>Tarjeta de crédito</li>
-        </ul>
-        </section>
-        <section class="sucursales-footer">
-            <p class="subtitulo-footer">Sucursales</p>
-            <ul class="sucursales">
-            <li>Ciudad Autónoma de Buenos Aires - Av. Corrientes 3453</li>
-            <li>Río cuarto, Córdoba - Belgrano 34593</li>
-            <li>Merlo, San Luis - Calle 15, 870</li>
-        </ul>
-        </section>
-    </footer>
-    <section class="sec-copyright">
-        <p class="copyright">Copyright © 2008-2022 ChocolateDreams S.R.L.</p>
-    </section> 
-</body>
+            <%- include('partials/footer') %>
+                <!-- /footer -->
+    </body>
 
 </html>

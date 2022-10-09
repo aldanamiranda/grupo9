@@ -9,8 +9,9 @@ const mainController = {
 
     home: function (req, res) {
         const destacado = products.filter(producti=> producto.category == "destacado");
+        const promo = products.filter(producti=> producto.category == "promo");
         const noDestacado = products.filter(producto=>producto.category == "in-sale");
-            res.render('home', {destacado, noDestacado})
+            res.render('home', {destacado, noDestacado, promo})
     },
 
     search: (req, res) => {
