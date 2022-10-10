@@ -20,7 +20,7 @@ app.set("view engine", 'ejs');
 app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la carpeta de las Vistas
 
 const mainRouter = require ('./routers/main');
-const productRouter = require ('./routers/products');
+const productsRouter = require ('./routers/products');
 
 app.use('/', mainRouter);
 app.use ('/products', productsRouter)
@@ -29,7 +29,7 @@ app.get('/', (req, res)=>{
 res.render('home')})
 //})
 
-//app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: false }))
 
 app.listen(process.env.PORT || 3030, ()=>{
     console.log ('servidor corriendo en puerto 3030')

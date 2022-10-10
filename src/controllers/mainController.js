@@ -1,6 +1,7 @@
 
-const express = require("express");
+
 const path= require('path');
+const fs= require ('fs');
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -8,8 +9,8 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const mainController = {
 
     home: function (req, res) {
-        const destacado = products.filter(producti=> producto.category == "destacado");
-        const promo = products.filter(producti=> producto.category == "promo");
+        const destacado = products.filter(producto=> producto.category == "destacado");
+        const promo = products.filter(producto=> producto.category == "promo");
         const noDestacado = products.filter(producto=>producto.category == "in-sale");
             res.render('home', {destacado, noDestacado, promo})
     },
