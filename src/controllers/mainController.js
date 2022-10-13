@@ -6,7 +6,7 @@ const fs= require ('fs');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-const mainController = {
+const controller = {
 
     home: function (req, res) {
         const destacado = products.filter(producto=> producto.category == "destacado");
@@ -41,4 +41,4 @@ const mainController = {
 
 
 
-module.exports= mainController;
+module.exports= controller;
