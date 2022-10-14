@@ -26,20 +26,21 @@ header {
 
 }
 .submit{
-    display: inline;
+    display: inline-block;
+    text-align: center;
 }
 
 .main-header-top-bar {
     display: flex;
     align-items: right;
-    width: 150%;
-    height: 50px;
+    width: 140%;
+    height: 70px;
 
 }
 .buscadorYcuenta{
     text-align: justify;
     width: 80%;
-    padding-bottom: 30px;
+    padding: 0px;
 }
 
 .main-navbar {
@@ -100,10 +101,11 @@ background-color: #ffeda7;
 
 .miCuentayCarrito {
     display: flex;
-    text-align: justify;
+    text-align: left;
+
 }
 .miCarrito, .miCuenta, .crearCuenta{
-    margin: 3%;
+    margin: 0;
     font-size: 5px;
     line-height: 15px;
 }
