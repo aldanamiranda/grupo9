@@ -2,8 +2,11 @@
     <div class="main-header-top-bar">
         <img class="logo" src="/images/logo choco.png" alt="logo de chocolateria">
         <div class="buscadorYcuenta">
-            <p class="submit"><input type="search" placeholder="Buscar"></p><button type="submit"><i
-                    class="fa fa-search"></i></button>
+            <p class="submit">
+            <form action="/search" method="GET" class="search-form">
+                <input type="search" name="keywords" placeholder="Buscar"></p>
+                <button type="submit" class="search-form_button"><i class="fa fa-search"></i></button>
+            </form>
             <nav class="top-navbar">
                 <ul class="miCuentayCarrito">
                     <li class="miCuenta"><a href="/login"><i class="fas fa-sign-in-alt"></i>Mi cuenta</a></li>
@@ -17,7 +20,7 @@
         <ul class="navbar">
             <li class="inicio"><a href="/">Inicio</a></li>
             <li><a href="/products">Productos</li>
-                <li><a href="/products/create">Vender</a></li>
+            <li><a href="/products/create">Vender</a></li>
             <li><a href="#">Promociones</a></li>
             <li><a href="#">Nosotros</a></li>
         </ul>
