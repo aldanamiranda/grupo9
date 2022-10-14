@@ -8,31 +8,30 @@
 	<!-- /Header -->
 
 	<!-- todos los productos -->
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Resultados de la búsqueda: <%= busqueda %> </h2>
+	<div class="productosBuscadosContenedor">
+		<div class="productosBuscados">
+			<div class="contenedorResultados">
+				<h2 class="resultados">Resultados de la búsqueda: <%= busqueda %> </h2>
 			</div>
 			<% if (productoABuscar.length > 0){ %> 
 			<% productoABuscar.forEach(producto=> { %>
-				<div class="col-12 col-sm-6 col-lg-3">
-					<section class="product-box">
-						<a href="/products/detail/<%= producto.id  %> ">
-							<figure class="product-box_image">
+				<div class="encontradosContenedor">
+					<section class="encontrados">
+						<a href="/products/detail/<%= '${producto.id}/'  %> ">
+							<figure class="encontrados-image">
 								<img src="/images/products/<%= producto.image %>" alt="imagen de producto">
 							</figure>
-							<article class="product-box_data">
+							<article class="encontradosData">
 								<h2><%= producto.precio %> </h2>
 								<span><%= producto.descuento %> </span>
 								<p><%= producto.name %> </p>
-								<i class="fas fa-truck"></i>
-							</article>
+								</article>
 						</a>
 					</section>
 				</div>
             <% } else {  %> 
-			<div class="col-12">
-				<h2 class="products-title" style="color: tomato;">No hay productos que coincidan con esa búsqueda</h2>
+			<div class="noEncontrado">
+				<h2 class="msjNoEncontrado" style="color: tomato;">No hay productos que coincidan con esa búsqueda</h2>
 			</div>
 			<% } %> 
 		</div>

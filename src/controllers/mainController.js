@@ -15,7 +15,7 @@ const controller = {
             res.render('home', {destacado, noDestacado, promo})
     },
 
-    search: (req, res) => {
+    busqueda: (req, res) => {
 		const busqueda = req.query.keywords
 		const productoABuscar= products.filter(producto=> producto.name.toLoweeCase().includes(busqueda))
 		res.render("results", {productoABuscar, busqueda})
